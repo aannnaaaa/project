@@ -1,44 +1,51 @@
 :root {
     --box-shadow: 0 0 35px rgba(12, 40, 54, 0.12);
     --dark: #0C2836;
-  }
+}
+//точки изменения экрана
 $xxl: 1400px;
 $xl: 1200px;
 $lg: 992px;
 $md: 768px;
 $sm: 576px;
+//переменные
+$container-xxl: 1296px;
+$container-xl: 1140px;
+$container-lg: 960px;
+$container-md: 720px;
+$container-sm: 540px;
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   --bs-gutter-x: 20px;
 }
 .row {
   --bs-gutter-x: 20px;
 }
-@media (min-width: 576px) {
+@media (min-width: $sm) {
   .container,.container-sm {
-      max-width:540px
+      max-width:$container-sm
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $md) {
   .container,.container-md,.container-sm {
-      max-width:720px
+      max-width:$container-md
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $lg) {
   .container,.container-lg,.container-md,.container-sm {
-      max-width:960px
+      max-width:$container-lg
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
   .container,.container-lg,.container-md,.container-sm,.container-xl {
-      max-width:1140px
+      max-width: $container-xl
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: $xxl) {
   .container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl {
-      max-width:1320px
+      max-width: $container-xxl
   }
 }
