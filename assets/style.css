@@ -1,0 +1,413 @@
+:root {
+  --box-shadow: 0 0 35px rgba(12, 40, 54, 0.12);
+  --dark: #0C2836;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+}
+
+/*sbros stilei*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, h5, ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*sbros stilei zakonchen*/
+/*vstroika osnovnih stilei*/
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+}
+
+/*konets vstroika osnovnih stilei*/
+/*stili dlia navigatsii*/
+.navigation {
+  padding-top: 35px;
+  margin-bottom: 72px;
+}
+@media screen and (max-width: 576px) {
+  .navigation {
+    padding-top: 10px;
+  }
+}
+.navigation .navigation__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  .navigation .navigation__wrap img {
+    width: 75px;
+  }
+}
+.navigation .navigation__list {
+  display: flex;
+  align-items: center;
+  grid-gap: 39px;
+}
+.navigation .navigation__list .navigation__list-item-link {
+  font-weight: 500;
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+@media screen and (max-width: 576px) {
+  .navigation .navigation__list .navigation__list-item-link {
+    display: none;
+  }
+}
+.navigation .navigation__list .navigation__list-item-link:hover {
+  text-decoration: underline;
+}
+
+/*konets stili dlia navigatsii*/
+/*stili dlia glavnogo bloka*/
+.promo {
+  margin-bottom: 79px;
+}
+.promo p {
+  margin-bottom: 262px;
+}
+@media screen and (max-width: 991px) {
+  .promo p {
+    margin-bottom: 285px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo p {
+    margin-bottom: 20px;
+  }
+}
+.promo h1 span {
+  color: #FFA239;
+}
+.promo .promo-bg {
+  background: url("../../img/promo.png") center no-repeat;
+  height: 628px;
+  background-size: contain;
+}
+@media screen and (max-width: 991px) {
+  .promo .promo-bg {
+    height: 670px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo .promo-bg {
+    background: none;
+    height: auto;
+  }
+}
+.promo .promo-bg .promo-bg-md {
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .promo .promo-bg .promo-bg-md {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.promo .promo__list {
+  margin-bottom: 158px;
+}
+.promo .promo__list li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.promo .promo__list li:last-child {
+  margin-bottom: 0;
+}
+
+.promo__cards {
+  display: flex;
+  margin-right: 35px;
+}
+
+.promo__list__bottom {
+  text-align: right;
+}
+.promo__list__bottom .promo__list__bottom li {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  gap: 12px;
+  margin-bottom: 24px;
+  margin-right: 42px;
+}
+.promo__list__bottom .promo__list__bottom span {
+  color: #FFA239;
+}
+
+.promo__card {
+  width: 501px;
+  height: 261px;
+  padding: 40px;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0 0 35px rgba(12, 40, 54, 0.12);
+  position: relative;
+  top: -27px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 991px) {
+  .promo__card {
+    height: 670px;
+  }
+}
+.promo__card .promo__card__pic {
+  padding-bottom: 25px;
+}
+.promo__card .promo__card__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/*konets stili dlia glavnogo bloka*/
+/*stili dlia proektov*/
+.projects {
+  margin-bottom: 100px;
+}
+.projects .row {
+  row-gap: 24px;
+}
+.projects .projects__card img {
+  border-radius: 15px;
+  width: 378px;
+  height: 238px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.projects .projects__card a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFA239;
+  text-decoration: none;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+.projects .projects__card a:hover {
+  text-decoration: underline;
+}
+
+/*konets stili dlia proektov*/
+/*stili dlia tech*/
+.tech {
+  margin-bottom: 100px;
+}
+.tech .row {
+  row-gap: 24px;
+}
+@media screen and (max-width: 576px) {
+  .tech .row {
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tech .row .col-6 {
+    padding: 0 5px;
+  }
+}
+.tech .tech__card {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+  padding: 55px 24px 24px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+@media screen and (max-width: 991px) {
+  .tech .tech__card {
+    padding-top: 44px;
+  }
+}
+.tech .tech__card .tech__card-img-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tech .tech__card .tech__card-name {
+  font-size: 18px;
+  color: #8A99A8;
+}
+
+/*konets stili dlia tech*/
+/*stili dlia obratnoi sviazi*/
+.feedback {
+  margin-bottom: 100px;
+}
+.feedback__text {
+  text-align: right;
+  margin-right: 37px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1199px) {
+  .feedback__text {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+    display: block;
+  }
+}
+.feedback__text h2 {
+  margin-bottom: 0;
+}
+.feedback__text p {
+  font-size: 24px;
+  margin-right: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .feedback__text p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.form {
+  background: white;
+  box-shadow: var(--box-shadow);
+  padding: 24px;
+  border-radius: 24px;
+}
+.form label {
+  display: block;
+}
+.form textarea, .form input {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid #D9E2EB;
+  border-radius: 10px;
+  min-height: 40px;
+  overflow: hidden;
+  outline: none;
+  width: 100%;
+}
+.form textarea::-moz-placeholder, .form input::-moz-placeholder {
+  color: #8A99A8;
+}
+.form textarea::placeholder, .form input::placeholder {
+  color: #8A99A8;
+}
+.form .form__group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 576px) {
+  .form .form__group {
+    flex-direction: column;
+  }
+}
+
+.button-primary {
+  background: linear-gradient(90deg, #FB8501 -0.07%, #FFB703 100%);
+  padding: 9px 60px;
+  border-radius: 10px;
+  border: none;
+  transition: box-shadow 300ms, transform 100ms;
+}
+@media screen and (max-width: 576px) {
+  .button-primary {
+    width: 100%;
+  }
+}
+.button-primary:focus {
+  transform: scale(0.95);
+}
+.button-primary:hover {
+  box-shadow: 0 0 10px 0 #FFB003;
+}
+
+/*konets stili dlia obratnoi sviazi*/
+/*stili dlia footer*/
+.footer .footer__top {
+  margin-bottom: 74px;
+}
+@media screen and (max-width: 991px) {
+  .footer .footer__top img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer .footer__top .row {
+    row-gap: 24px;
+    align-items: center;
+  }
+}
+.footer .footer__top .footer__links {
+  text-align: center;
+}
+.footer .footer__top .footer__links .footer__links-item-link {
+  font-size: 24px;
+  color: var(--dark);
+}
+.footer .footer__top .footer__info {
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  .footer .footer__top .footer__info {
+    text-align: center;
+  }
+}
+.footer .footer__copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/*konets stili dlia footer*//*# sourceMappingURL=style.css.map */

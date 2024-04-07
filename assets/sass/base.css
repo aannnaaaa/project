@@ -1,0 +1,60 @@
+/*sbros stilei*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, h5, ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*sbros stilei zakonchen*/
+/*vstroika osnovnih stilei*/
+:root {
+  --box-shadow: 0 0 35px rgba(12, 40, 54, 0.12);
+  --dark: #0C2836;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+}
+
+/*konets vstroika osnovnih stilei*//*# sourceMappingURL=base.css.map */

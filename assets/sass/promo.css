@@ -1,0 +1,105 @@
+/*stili dlia glavnogo bloka*/
+.promo {
+  margin-bottom: 79px;
+}
+.promo p {
+  margin-bottom: 262px;
+}
+@media screen and (max-width: 991px) {
+  .promo p {
+    margin-bottom: 285px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo p {
+    margin-bottom: 20px;
+  }
+}
+.promo h1 span {
+  color: #FFA239;
+}
+.promo .promo-bg {
+  background: url("../../img/promo.png") center no-repeat;
+  height: 628px;
+  background-size: contain;
+}
+@media screen and (max-width: 991px) {
+  .promo .promo-bg {
+    height: 670px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo .promo-bg {
+    background: none;
+    height: auto;
+  }
+}
+.promo .promo-bg .promo-bg-md {
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .promo .promo-bg .promo-bg-md {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.promo .promo__list {
+  margin-bottom: 158px;
+}
+.promo .promo__list li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.promo .promo__list li:last-child {
+  margin-bottom: 0;
+}
+
+.promo__cards {
+  display: flex;
+  margin-right: 35px;
+}
+
+.promo__list__bottom {
+  text-align: right;
+}
+.promo__list__bottom .promo__list__bottom li {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  gap: 12px;
+  margin-bottom: 24px;
+  margin-right: 42px;
+}
+.promo__list__bottom .promo__list__bottom span {
+  color: #FFA239;
+}
+
+.promo__card {
+  width: 501px;
+  height: 261px;
+  padding: 40px;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0 0 35px rgba(12, 40, 54, 0.12);
+  position: relative;
+  top: -27px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 991px) {
+  .promo__card {
+    height: 670px;
+  }
+}
+.promo__card .promo__card__pic {
+  padding-bottom: 25px;
+}
+.promo__card .promo__card__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/*konets stili dlia glavnogo bloka*//*# sourceMappingURL=promo.css.map */

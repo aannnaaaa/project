@@ -1,0 +1,99 @@
+/*stili dlia glavnogo bloka*/
+.promo{
+    margin-bottom: 79px;
+
+    p{
+        margin-bottom: 262px;
+       
+        @media screen and (max-width: 991px) {
+            margin-bottom: 285px;
+          }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+          }
+    }
+    h1 span{
+        color: #FFA239;
+    }
+    .promo-bg{
+        background: url("../../img/promo.png") center no-repeat;
+        height: 628px;
+        background-size: contain;
+        @media screen and (max-width: 991px) {
+            height: 670px;
+          }
+        @media screen and (max-width: 768px) {
+            background: none;
+            height: auto;
+        }
+         .promo-bg-md{
+            display: none;
+            width: 100%;
+            @media screen and (max-width: 768px) {
+                display: block;
+                margin-bottom: 20px;
+              }
+          }
+    }
+    .promo__list{
+        margin-bottom: 158px;
+    }
+    .promo__list li{
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        margin-bottom: 8px;  
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    
+}
+
+.promo__cards{
+    display: flex;
+    margin-right: 35px;
+}
+.promo__list__bottom {
+    text-align: right;
+
+    .promo__list__bottom li{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38.4px;
+        gap: 12px;
+        margin-bottom: 24px;
+        margin-right: 42px;
+    }
+
+    .promo__list__bottom span{
+        color:#FFA239;
+    }
+}
+
+
+.promo__card{
+    width: 501px;
+    height:  261px;
+    padding: 40px;
+    border-radius: 40px;
+    background: white;
+    box-shadow: 0 0 35px rgba(12, 40, 54, 0.12);
+    position: relative;
+    top: -27px;
+    margin-bottom: 100px;
+    @media screen and (max-width: 991px) {
+        height: 670px;
+      }
+    .promo__card__pic{
+        padding-bottom: 25px;
+    }
+    .promo__card__text{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+}
+
+/*konets stili dlia glavnogo bloka*/

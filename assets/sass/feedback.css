@@ -1,0 +1,90 @@
+/*stili dlia obratnoi sviazi*/
+.feedback {
+  margin-bottom: 100px;
+}
+.feedback__text {
+  text-align: right;
+  margin-right: 37px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1199px) {
+  .feedback__text {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+    display: block;
+  }
+}
+.feedback__text h2 {
+  margin-bottom: 0;
+}
+.feedback__text p {
+  font-size: 24px;
+  margin-right: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .feedback__text p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.form {
+  background: white;
+  box-shadow: var(--box-shadow);
+  padding: 24px;
+  border-radius: 24px;
+}
+.form label {
+  display: block;
+}
+.form textarea, .form input {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid #D9E2EB;
+  border-radius: 10px;
+  min-height: 40px;
+  overflow: hidden;
+  outline: none;
+  width: 100%;
+}
+.form textarea::-moz-placeholder, .form input::-moz-placeholder {
+  color: #8A99A8;
+}
+.form textarea::placeholder, .form input::placeholder {
+  color: #8A99A8;
+}
+.form .form__group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 576px) {
+  .form .form__group {
+    flex-direction: column;
+  }
+}
+
+.button-primary {
+  background: linear-gradient(90deg, #FB8501 -0.07%, #FFB703 100%);
+  padding: 9px 60px;
+  border-radius: 10px;
+  border: none;
+  transition: box-shadow 300ms, transform 100ms;
+}
+@media screen and (max-width: 576px) {
+  .button-primary {
+    width: 100%;
+  }
+}
+.button-primary:focus {
+  transform: scale(0.95);
+}
+.button-primary:hover {
+  box-shadow: 0 0 10px 0 #FFB003;
+}
+
+/*konets stili dlia obratnoi sviazi*//*# sourceMappingURL=feedback.css.map */

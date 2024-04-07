@@ -1,0 +1,48 @@
+/*stili dlia tech*/
+.tech {
+  margin-bottom: 100px;
+}
+.tech .row {
+  row-gap: 24px;
+}
+@media screen and (max-width: 576px) {
+  .tech .row {
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tech .row .col-6 {
+    padding: 0 5px;
+  }
+}
+.tech .tech__card {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+  padding: 55px 24px 24px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+@media screen and (max-width: 991px) {
+  .tech .tech__card {
+    padding-top: 44px;
+  }
+}
+.tech .tech__card .tech__card-img-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tech .tech__card .tech__card-name {
+  font-size: 18px;
+  color: #8A99A8;
+}
+
+/*konets stili dlia tech*//*# sourceMappingURL=tech.css.map */

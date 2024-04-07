@@ -1,0 +1,27 @@
+/*stili dlia proektov*/
+.projects {
+  margin-bottom: 100px;
+}
+.projects .row {
+  row-gap: 24px;
+}
+.projects .projects__card img {
+  border-radius: 15px;
+  width: 378px;
+  height: 238px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.projects .projects__card a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFA239;
+  text-decoration: none;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+.projects .projects__card a:hover {
+  text-decoration: underline;
+}
+
+/*konets stili dlia proektov*//*# sourceMappingURL=projects.css.map */
